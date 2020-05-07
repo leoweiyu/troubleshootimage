@@ -1,0 +1,8 @@
+wget
+openssl
+tcpdump
+strace
+iptraf-ng
+nmap
+mtr
+traceroute
