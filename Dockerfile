@@ -8,5 +8,6 @@ RUN yum -y install wget \
     iptraf-ng \
     nmap \
     mtr \
+    git \
     traceroute
 COPY software.txt /opt/
