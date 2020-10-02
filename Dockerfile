@@ -1,7 +1,8 @@
 FROM centos:latest
 MAINTAINER leaonow@hotmail.com
 
-RUN yum -y install wget \
+RUN yum -y update
+    yum -y install wget \
     openssl \
     tcpdump \
     strace \
