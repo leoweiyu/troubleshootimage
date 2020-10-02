@@ -1,7 +1,7 @@
 FROM centos:latest
 MAINTAINER leaonow@hotmail.com
 
-RUN yum -y update
+RUN yum -y update \
     yum -y install wget \
     openssl \
     tcpdump \
