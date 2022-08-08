@@ -1,17 +1,18 @@
-FROM centos:latest
-MAINTAINER leaonow@hotmail.com
+FROM registry.access.redhat.com/ubi8/ubi
+LABEL maintainer="leaonow@hotmail.com"
 
 RUN yum -y update && \
     yum -y install wget \
     openssl \
-    tcpdump \
-    strace \
-    iptraf-ng \
+#    tcpdump \
+#    strace \
+#    iptraf-ng \
     nmap \
-    mtr \
+#    mtr \
     git \
     jq \
-    traceroute
+#    traceroute \
+    bind-utils
 RUN wget https://storage.googleapis.com/kubernetes-release/release/v1.21.1/bin/linux/amd64/kubectl && \
     mv kubectl /usr/bin && \
     chmod +x /usr/bin/kubectl && \
